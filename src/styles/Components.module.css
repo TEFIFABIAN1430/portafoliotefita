@@ -1,0 +1,182 @@
+/* CardTimeline */
+
+
+/* Title */
+
+.title_line_1 {
+  animation: move_line_1 2s infinite ease;
+}
+
+.title_line_2 {
+  animation: move_line_2 2s infinite ease;
+}
+
+.title_line_3 {
+  animation: move_line_3 2s infinite ease;
+}
+
+.title_line_4 {
+  animation: move_line_4 2s infinite ease;
+}
+
+
+@keyframes move_line_1 {
+  0% {
+    height: 100%; 
+    bottom: 0;
+  }
+  54% {
+    height: 0; 
+    bottom: 100%;
+  }
+  55% {
+    height: 0; 
+    bottom: 0;
+  }
+  100% {
+    height: 100%; 
+    bottom: 0;
+  }
+}
+
+@keyframes move_line_2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%; 
+    left: 0;
+  }
+  100% {
+    width: 0; 
+    left: 100%;
+  }
+}
+
+@keyframes move_line_3 {
+  0% {
+    height: 100%; 
+    top: 0;
+  }
+  54% {
+    height: 0; 
+    top: 100%;
+  }
+  55% {
+    height: 0; 
+    top: 0;
+  }
+  100% {
+    height: 100%; 
+    top: 0;
+  }
+}
+
+@keyframes move_line_4 {
+  0% {
+    width: 0; 
+    right: 0;
+  }
+  55% {
+    width: 100%; 
+    right: 0;
+  }
+  100% {
+    width: 0; 
+    right: 100%;
+  }
+}
+
+/* UserTitle */
+
+.content_title h2:nth-child(1) {
+	-webkit-text-stroke: 2px #C00B62;
+}
+
+.content_title h2:nth-child(2) {
+	animation: animate_title 4s ease-in-out infinite;
+}
+
+@keyframes animate_title {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+/* CardStyled */
+
+.effect_1 {
+  animation: rotate 2.5s linear infinite;
+}
+
+.effect_2 {
+  animation: rotate 2.5s linear reverse infinite;
+}
+
+@keyframes rotate {
+  0% {
+    top: 0;
+    left: 8%;
+  }
+  25% {
+    top: 8%;
+    left: 0%;
+  }
+  50% {
+    top: 16%;
+    left: 8%;
+  }
+  75% {
+    top: 8%;
+    left: 16%;
+  }
+  100% {
+    top: 0;
+    left: 8%;
+  }
+}
+
+
+/* ImageStyled */
+
+.image_box {
+  box-shadow: inset 0 0 10px #13000E, 0 0 10px #13000E;
+  filter: drop-shadow(0 0 10px #C00B62) saturate(2);
+}
+
+.image_inset {
+  clip-path: inset(3px);
+  filter: drop-shadow(0 0 10px #C00B62) saturate(0.5);
+}
+
+.image_box::before {
+  background: repeating-conic-gradient(transparent, #C00B62 25deg, #13000E 22.5deg, transparent 90deg);
+  scale: 1.6;
+}

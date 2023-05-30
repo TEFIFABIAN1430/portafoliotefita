@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Paytone One';
+  src: url('../../public/fonts/PaytoneOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rowdles Bold';
+  src: url('../../public/fonts/Rowdies-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rowdles Light';
+  src: url('../../public/fonts/Rowdies-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rowdles Regular';
+  src: url('../../public/fonts/Rowdies-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lilita One';
+  src: url('../../public/fonts/LilitaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bree Serif';
+  src: url('../../public/fonts/BreeSerif-Regular.ttf') format('truetype');
+}
+
+.font_rowdles_bold {
+  font-family: 'Rowdles Bold', cursive;
+}
+
+.font_rowdles_light {
+  font-family: 'Rowdles Light', cursive;
+}
+
+.font_rowdles_regular {
+  font-family: 'Rowdles Regular', cursive;
+}
+
+.font_paytone {
+  font-family: "Paytone One", sans-serif;
+}
+
+.font_lilita {
+  font-family: "Lilita One", cursive;
+}
+
+.font_bree {
+  font-family: "Bree Serif", serif;
+}
+
+

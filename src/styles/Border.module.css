@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #c00b62;
+  box-shadow: 0 0 0 2px rgba(192, 11, 98, .5);
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+  bottom: -5%;
+  left: -5%;
+  right: -5%;
+  box-shadow: 0 0 0 1px rgba(192, 11, 98, .5);
+  animation: clipMe 8s linear infinite;
+}
+
+.container:hover::before {
+  background-color: rgba(255, 0, 0, .3);
+}
+
+@keyframes clipMe {
+
+  0%,
+  100% {
+    clip: rect(-2px, 304px, 2px, -2px);
+  }
+
+  25% {
+    clip: rect(-2px, 2px, 104px, -2px);
+  }
+
+  50% {
+    clip: rect(76px, 304px, 104px, -2px);
+  }
+
+  75% {
+    clip: rect(-2px, 304px, 104px, 304px);
+  }
+}
+
+.container {
+  text-align: center;
+  color: #c00b62;
+}
